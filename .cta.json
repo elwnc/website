@@ -1,0 +1,28 @@
+{
+  "projectName": ".",
+  "mode": "file-router",
+  "typescript": true,
+  "tailwind": true,
+  "packageManager": "pnpm",
+  "addOnOptions": {
+    "drizzle": {
+      "database": "postgresql"
+    }
+  },
+  "git": true,
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+    "eslint",
+    "sentry",
+    "db",
+    "drizzle",
+    "form",
+    "mcp",
+    "t3env",
+    "table",
+    "start",
+    "store",
+    "tanstack-query"
+  ]
+}

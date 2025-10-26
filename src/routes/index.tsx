@@ -5,7 +5,7 @@ export const Route = createFileRoute('/')({ component: App })
 function App() {
   return (
     <>
-      <div></div>
+      <div>{import.meta.env.VITE_BACKEND_URL}</div>
     </>
   )
 }

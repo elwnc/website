@@ -24,6 +24,7 @@
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/db": "^0.4.3",
     "@tanstack/match-sorter-utils": "^8.19.4",
+    "@tanstack/nitro-v2-vite-plugin": "^1.133.19",
     "@tanstack/query-db-collection": "^0.2.0",
     "@tanstack/react-db": "^0.1.1",
     "@tanstack/react-devtools": "^0.7.0",

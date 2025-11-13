@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact from '@vitejs/plugin-react'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
-import { nitroV2Plugin } from '@tanstack/nitro-v2-vite-plugin'
+import { nitro } from 'nitro/vite'
 
 import { wrapVinxiConfigWithSentry } from '@sentry/tanstackstart-react'
 
@@ -12,15 +12,11 @@ const config = defineConfig({
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],
     }),
-    nitroV2Plugin({
-      compatibilityDate: '2025-11-06',
-      preset: 'node-server',
-      minify: true,
-      timing: false,
-    }),
+    nitro(),
     tanstackStart(),
     viteReact(),
   ],
+  nitro: {},
 })
 
 export default wrapVinxiConfigWithSentry(config, {

@@ -1,10 +1,11 @@
 {
-  "name": ".",
+  "name": "website",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite dev --port 3000",
     "build": "vite build",
+    "start": "node .output/server/index.mjs",
     "serve": "vite preview",
     "test": "vitest run",
     "lint": "eslint",
@@ -24,7 +25,6 @@
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/db": "^0.4.3",
     "@tanstack/match-sorter-utils": "^8.19.4",
-    "@tanstack/nitro-v2-vite-plugin": "^1.133.19",
     "@tanstack/query-db-collection": "^0.2.0",
     "@tanstack/react-db": "^0.1.1",
     "@tanstack/react-devtools": "^0.7.0",
@@ -42,6 +42,7 @@
     "drizzle-kit": "^0.30.0",
     "drizzle-orm": "^0.39.0",
     "lucide-react": "^0.544.0",
+    "nitro": "3.0.1-alpha.1",
     "pg": "^8.11.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
